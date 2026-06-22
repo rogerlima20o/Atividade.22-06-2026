@@ -1,35 +1,25 @@
-# Atividade.22-06-2026
+# Sistema de Registo de Utilizadores em Python 📝
 
-# Gerenciador de Arquivos via Terminal (CLI)
+Este é um projeto desenvolvido em Python que implementa uma aplicação de consola interativa para ler e gravar dados de utilizadores (Nome, Sobrenome e Idade) num arquivo local no formato **JSON**. 
 
-Um aplicativo simples e eficiente em Python executado diretamente no terminal. O programa oferece uma interface de linha de comando (CLI) estruturada em menu para leitura e gravação de arquivos de texto de forma segura.
+O projeto foi construído cumprindo todos os requisitos solicitados, incluindo a modularização em funções para cada funcionalidade e o tratamento de exceções.
 
-## 🚀 Funcionalidades
+## 👥 Elementos do Grupo (Dupla)
+* [vitor almeida](https://github.com/seu-usuario-github)
+* [Roger Felipe](https://github.com/seu-usuario-github)
 
-* **Menu Interativo:** Navegação simples através de opções numéricas (1 a 3).
-* **Leitura Segura:** Validação de existência do arquivo antes da abertura, evitando que o programa trave caso o arquivo não seja encontrado.
-* **Gravação de Dados:** Permite criar novos arquivos de texto ou sobrescrever arquivos existentes com codificação UTF-8 (garantindo compatibilidade com acentos e caracteres especiais).
-* **Tratamento de Erros:** Captura e exibição amigável de exceções do sistema (como permissões negadas ou falhas de disco).
-
----
+## 📋 Funcionalidades
+* **1. Ler:** Procura o arquivo de base de dados (`usuarios.json`). Se existir, exibe todos os registos formatados de forma organizada no terminal. Se estiver vazio ou não existir, avisa o utilizador.
+* **2. Salvar:** Solicita o nome, sobrenome e idade do utilizador, valida as entradas (impedindo idades inválidas ou textos vazios) e adiciona o novo registo ao arquivo JSON sem apagar os dados anteriores.
+* **3. Sair:** Encerra a execução do programa de forma segura.
 
 ## 🛠️ Tecnologias Utilizadas
+* **Python 3.x**
+* Biblioteca nativa `json` (para manipulação estruturada de dados)
+* Biblioteca nativa `os` (para verificação de existência de arquivos no sistema)
 
-* **Python 3**
-* **Módulo `os`:** Utilizado especificamente para a verificação de caminhos de arquivos no sistema operacional (`os.path.exists`).
+## 🚀 Como Executar o Projeto
 
----
-
-## 📋 Pré-requisitos
-
-Você só precisa ter o **Python 3.x** instalado em sua máquina. Nenhuma biblioteca externa adicional é necessária, pois o projeto utiliza apenas módulos nativos.
-
----
-
-## 🔧 Como Executar
-
-1. **Baixe ou clone o código** para uma pasta no seu computador.
-2. Abra o terminal (ou Prompt de Comando) e **navegue até a pasta** onde o arquivo está salvo.
-3. Execute o programa com o comando:
+1. **Clonar o repositório:**
    ```bash
-   python nome_do_seu_arquivo.py
+   git clone [https://github.com/seu-usuario/nome-do-seu-repositorio.git](https://github.com/seu-usuario/nome-do-seu-repositorio.git)
